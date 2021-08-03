@@ -12,8 +12,14 @@ public class SumaRango {
      * @return
      */
     public static Integer resolver(Integer num1, Integer num2) {
-        // TODO: implementar
-        return null;
+        if(num1 > num2){
+            return 0;
+        }
+        int sum = 0;
+        for(int i = num1;i<=num2;i++){
+            sum += i;
+        }
+        return sum;
     }
 
     /**
@@ -26,8 +32,16 @@ public class SumaRango {
      * @return
      */
     public static Integer resolverPares(Integer num1, Integer num2) {
-        // TODO: implementar
-        return null;
+        if(num1 > num2){
+            return 0;
+        }
+        int sum = 0;
+        for(int i = num1; i<=num2;i++){
+            if(i % 2 == 0){
+                sum += i;
+            }
+        }
+        return sum;
     }
 
     /**
@@ -40,7 +54,15 @@ public class SumaRango {
      * @return
      */
     public static Integer resolverImpares(Integer num1, Integer num2) {
-        // TODO: implementar
-        return null;
+        if(num1 > num2){
+            return 0;
+        }
+        int sum = 0;
+        for(int i = num1; i<=num2;i++){
+            if(i % 2 != 0){
+                sum += i;
+            }
+        }
+        return sum;
     }
 }
