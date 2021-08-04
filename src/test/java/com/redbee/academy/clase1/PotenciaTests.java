@@ -37,4 +37,12 @@ public class PotenciaTests {
 
         Assertions.assertEquals(16, resultado);
     }
+
+    @Test
+    @DisplayName("Test 5 elevado a la 0")
+    void testPotencia5() {
+        Integer resultado = Potencia.resolver(5, 0);
+
+        Assertions.assertEquals(1, resultado);
+    }
 }
